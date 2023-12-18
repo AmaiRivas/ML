@@ -17,7 +17,7 @@ class Agent:
     def __init__(self):
         self.n_games = 0
         self.epsilon = 0    # Randomness
-        self.gamma = 0.7  # Discount rate
+        self.gamma = 0.9  # Discount rate
         self.memory = deque(maxlen=MAX_MEMORY)  # Popleft()
         self.model = Linear_QNet(11, 256, 3)
         self.trainer = QTrainer(self.model, lr=LR, gamma=self.gamma)

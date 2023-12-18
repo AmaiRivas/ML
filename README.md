@@ -19,12 +19,23 @@ _If error about Set-ExecutionPolicy:_
 
 - `.venv\Scripts\Activate.ps1`  **Activates the environment**
 
-`python -m pip install --upgrade pip`   **Upgrades pip to latest version**
+`python -m pip install --upgrade pip`   **Upgrades pip to latest version, sometimes necessary to install required packages**
 
 `pip install -r .\requirements.txt` **Installs the required packages for the repository**
 
 ### **On Linux like OS**
 
-To be continued...
+`sudo apt-get install python3.7-venv`   **Installs venv for python 3.7**
+
+`python3.7 -m venv .venv`   **Creates a virtual environment named .venv**
+
+`source .venv/bin/activate` **Activates the virtual environment**
+
+`python -m pip install --upgrade pip`   **Upgrades pip in the virtual environment, sometimes necessary to install required packages**
+
+`pip install -r requirements.txt`   **Installs packages from requirements.txt**
+
+
+
 
 
