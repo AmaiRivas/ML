@@ -1,0 +1,8 @@
+torch
+torchvision
+matplotlib
+pygame
+numpy
+IPython
+mediapipe
+opencv-python
